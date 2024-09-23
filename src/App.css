@@ -1,0 +1,14 @@
+body{
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Bespoke Stencil', sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+    
+  }
+  section > div {
+    width: 100%;
+      /* transform: translateX(-50px);
+      opacity: 0; */
+    }

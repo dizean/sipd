@@ -1,0 +1,74 @@
+.events{
+  width: 100%;
+  color: aliceblue;
+}
+
+.events .slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.events .slider h1{
+  margin: 0;
+  font-size: 70px;
+}
+.events .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(60% * 14);
+}
+
+.events .slide {
+  width: 60% ;
+  font-size: 30px;
+  padding: 50px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 7));
+  }
+}
+
+.evimgs{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.evimgs .carousel{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  transform: translate(0,300px);
+  opacity: 0;
+}
+.evimgs .carousel h1,p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.evimgs .carousel h1{
+ font-size: 20px;
+}
+.cars{
+  background-color: aqua;
+}
+.evimgs img{
+  width:250px;
+  height: 250px;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, rgb(41, 41, 188), rgb(157, 113, 179)) border-box;
+              border-radius: 100%;
+  border: 5px solid transparent;
+}
+.evimgs img:hover{
+  width: 300px;
+  height: 300px;
+  animation:slide-fwd-top .45s cubic-bezier(.25,.46,.45,.94) both
+}
+ @keyframes slide-fwd-top{0%{transform:translateZ(0) translateY(0)}100%{transform:translateZ(50px) translateY(-10px)}}
